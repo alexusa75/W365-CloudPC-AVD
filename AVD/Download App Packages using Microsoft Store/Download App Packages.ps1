@@ -5,7 +5,7 @@ function Get-AppPackageLinks {
         [string]$ProductIDOrURL,
         [string]$outputPath
     )
-    $ProductIDOrURL = "https://apps.microsoft.com/detail/9n8g5rfz9xk3?hl=en-us&gl=US"
+    #$ProductIDOrURL = "https://apps.microsoft.com/detail/9n8g5rfz9xk3?hl=en-us&gl=US"
     # API Endpoint
     $apiUrl = "https://store.rg-adguard.net/api/GetFiles"
 
@@ -100,7 +100,7 @@ function Get-AppPackageLinks {
 
 # Example Usage
 # Replace this with the app's URL or Product ID from the Microsoft Store
-$ProductID = "https://apps.microsoft.com/store/detail/app-name/9WZDNCRFHVJL"
+$ProductID = "https://apps.microsoft.com/detail/9n8g5rfz9xk3?hl=en-us&gl=US"
 $outputPath = [Environment]::GetFolderPath("Desktop") + "\AppPackage"
 If(!(Test-Path $outputPath)){
     New-Item -ItemType Directory -Path $outputPath
